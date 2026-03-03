@@ -84,87 +84,24 @@ nav ul li.hover-menu:hover::after {transform: scaleX(1); }
  
 
   .promotion {
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column; /* 자식들을 세로로 정렬 */
-    align-items: center;    /* 자식들을 가운데로 모음 */
-    
-    /* 1. 위쪽 여백을 줄여서 갈라짐 방지 */
-    padding: 60px 0 20px 0; 
-    
-    /* 2. 이미지 위로 50px만큼 슥~ 올라가게 함 */
-    margin-top: -50px; 
-    
-    /* 3. 둥근 모서리 */
-    border-radius: 30px 30px 0 0; 
-    
-    /* 4. 이미지보다 위에 떠 있도록 설정 */
-    position: relative; 
-    z-index: 10; 
-}
-.content-box {
-    max-width: 850px;    /* 사진처럼 보려면 800~900px 정도가 적당해요 */
-    margin: 0 auto;      /* 페이지 중앙 정렬 */
-    padding: 60px 20px;
-    text-align: center;  /* 👈 내부 모든 텍스트/이미지를 중앙으로! */
-}
-.content-box section {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 👈 내부 요소들을 세로축 중앙(가로기준 중앙)으로 정렬 */
-}
+    width: 100%;background-color: #ffffff; display: flex; flex-direction: column; 
+    align-items: center; padding: 60px 0 20px 0; margin-top: -50px;  border-radius: 30px 30px 0 0; 
+     position: relative; z-index: 10; }
 
-/* 2. post-body 내부 개별 요소 정렬 */
+.content-box {max-width: 850px;margin: 0 auto; padding: 60px 20px; text-align: center;  }
+.content-box section { text-align: center; width: 100%; display: flex;
+    flex-direction: column;align-items: center;}
 .post-body h2 {
-    font-size: 24px;
-    color: #b87a4b;      /* 사진 속 갈색 느낌의 타이틀 색상 */
-    margin-top: 80px;
-    margin-bottom: 10px;
-     text-align: center;
-}
-.post-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-.post-body p {
-    width: 100%;           /* 부모 너비만큼 차지하게 하되 */
-    max-width: 800px;      /* 최대 너비 제한 */
-    margin-left: auto;     /* 👈 좌우 마진 auto로 상자 자체를 중앙으로 */
-    margin-right: auto;
-    text-align: center;    /* 👈 텍스트도 중앙으로 */
-}
-.post-body img {
-    max-width: 100%;     /* 박스 너비를 넘지 않게 */
-    height: auto;
-    margin: 20px auto 40px; /* 위아래 여백, 가로 중앙 */
-    display: block;      /* margin auto 작동을 위해 필요 */
-}
+    font-size: 24px; color: #b87a4b;  margin-top: 80px; margin-bottom: 10px; text-align: center;}
+.post-header {text-align: center;margin-bottom: 50px;}
+.post-body p {width: 100%; max-width: 800px; margin-left: auto;    
+    margin-right: auto;text-align: center; }
+.post-body img {max-width: 100%; height: auto; margin: 20px auto 40px; display: block; }
+.share-section {margin-top: 100px; padding-top: 40px; border-top: 1px solid #eee;
+    display: flex;justify-content: center;align-items: center; gap: 20px;}
+.share-icons {display: flex;gap: 15px;}
+.share-icons img {width: 35px; height: 35px;margin: 0;  cursor: pointer;}
 
-/* 3. 공유하기 아이콘 정렬 */
-.share-section {
-    margin-top: 100px;
-    padding-top: 40px;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.share-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.share-icons img {
-    width: 35px;
-    height: 35px;
-    margin: 0; /* 이미지 공통 마진 해제 */
-    cursor: pointer;
-}
 .row-bar {width: 100%;margin-top: 90px;margin-bottom: 70px;display: flex;justify-content: center;}
 .row-content {display: flex; align-items: center;gap: 20px;color: #5e5e5e; font-size: 14px;}
 .share-icons {display: flex;gap: 20px;align-items: center;}
